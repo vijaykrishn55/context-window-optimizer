@@ -1,0 +1,13 @@
+{
+  "tokenizer_model": "gpt-4o",
+  "system_prompt": "You are a careful compliance assistant. Follow the supplied policy and do not invent facts.",
+  "critical_fact": "RULE 802-B: Cross-border transactions exceeding $1,000,000 require dual authorization within 24 hours.",
+  "context_chunks": [
+    "Section 1: Corporate restructuring history from 2015 to 2020.",
+    "Section 2: Procurement guidelines and invoice approval process.",
+    "Section 3: Rule 802-B applies to cross-border transactions above $1,000,000 and requires dual authorization within 24 hours.",
+    "Section 4: IT password reset procedures and multi-factor authentication.",
+    "Section 5: Office closure dates and cafeteria schedules."
+  ],
+  "user_query": "What threshold and timeline trigger dual authorization under Rule 802-B?"
+}

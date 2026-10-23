@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "context-window-optimizer"
+version = "1.0.0"
+description = "Context auditing, sandwich prompting, safe pruning, chunking, and retrieval-depth evaluation."
+requires-python = ">=3.10"
+dependencies = [
+  "openai>=1.40.0",
+  "anthropic>=0.40.0",
+  "tiktoken>=0.6.0",
+  "pydantic>=2.6.0",
+  "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+context-window = "context_optimizer.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["context_optimizer*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
